@@ -3,7 +3,7 @@ from django.utils import timezone
 import datetime 
 
 class User(models.Model):
-    emai=models.CharField(max_length=100,null=False)
+    email=models.CharField(max_length=100,null=False)
     password=models.CharField(max_length=500, null=False)
     status=models.BooleanField(default=True, null=True)
     created_at=models.DateTimeField(default=datetime.datetime.now, null=False)
